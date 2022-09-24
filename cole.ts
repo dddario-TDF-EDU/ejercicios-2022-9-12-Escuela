@@ -179,7 +179,7 @@ class Profesor {
     //nose que nombre ponerle sin repetirme jaja
     public getMiLista(): void {
         for (let i=0; i < this.listaEstudiantes.length; i++) {
-            console.log ("Estudiante " + this.listaEstudiantes[i].getNombreApellido()); // " pertenece a la clase " + this.listaEstudiantes[i].getClase());
+            console.log ("Estudiante " + this.listaEstudiantes[i].getNombreApellido() + " pertenece a la clase " + this.listaEstudiantes[i].getClase());
         }
     }
 
@@ -223,7 +223,6 @@ function apellidoRandom(): string {
 cargarEstudiantes(cantEst);
 cargarProfes(cantProf);
 let colegioUshuaia : Colegio = new Colegio("Ushuaia chiquita", cantEst, cantProf);
-colegioUshuaia.getClase(0);
 colegioUshuaia.getListaEstudiantes();
 colegioUshuaia.getListaProfesores();
 console.log(cantEst[2]);

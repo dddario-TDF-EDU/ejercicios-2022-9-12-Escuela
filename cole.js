@@ -142,7 +142,7 @@ var Profesor = /** @class */ (function () {
     //nose que nombre ponerle sin repetirme jaja
     Profesor.prototype.getMiLista = function () {
         for (var i = 0; i < this.listaEstudiantes.length; i++) {
-            console.log("Estudiante " + this.listaEstudiantes[i].getNombreApellido()); // " pertenece a la clase " + this.listaEstudiantes[i].getClase());
+            console.log("Estudiante " + this.listaEstudiantes[i].getNombreApellido() + " pertenece a la clase " + this.listaEstudiantes[i].getClase());
         }
     };
     return Profesor;
@@ -177,7 +177,6 @@ function apellidoRandom() {
 cargarEstudiantes(cantEst);
 cargarProfes(cantProf);
 var colegioUshuaia = new Colegio("Ushuaia chiquita", cantEst, cantProf);
-colegioUshuaia.getClase(0);
 colegioUshuaia.getListaEstudiantes();
 colegioUshuaia.getListaProfesores();
 console.log(cantEst[2]);
